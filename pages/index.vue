@@ -31,8 +31,7 @@
             </h1>
           </div>
         
-          <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
-            <!--<StoryblokComponent v-if="story" :blok="story.content" />-->
+          <!--<div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
             <ArticleCard
               v-for="article in articles"
               :key="article.content.title"
@@ -44,7 +43,7 @@
               :image="article.content.image.filename"
               
             />
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
