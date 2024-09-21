@@ -43,6 +43,7 @@
               :slug="`/${article.slug}`"
               :author="article.content.author"
               :image="article.content.image.filename"
+              :date="article.content.date"
               
             />
           </div>
@@ -54,6 +55,7 @@
 </template>
 
 <script setup lang="ts">
+  import { format } from 'date-fns';
   defineProps({
     blok: {
       type: Object,

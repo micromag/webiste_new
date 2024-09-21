@@ -35,10 +35,10 @@
                 {{ author.content.Name }}
               </a>
             </p>
-            <div class="flex space-x-1 text-sm text-gray-500">
-              <time datetime="2020-03-16">
-                {{ date }}
-              </time>
+            <div class="flex space-x-1 text-sm text-blue-900">
+              <!--<time datetime="2020-03-16">-->
+                {{ formattedDate }}
+              <!--</time>-->
             </div>
           </div>
         </div>
@@ -47,8 +47,11 @@
   </nuxt-link>
 </template>
 
-<script setup>
-  defineProps({
+<script setup lang="ts">
+  import { format } from 'date-fns'
+  import { computed } from 'vue';
+  
+  const props = defineProps({
     type: String,
     title: String,
     slug: String,
@@ -56,6 +59,11 @@
     author: Object,
     date: String,
     image: String,
+  })
+
+  const formattedDate = computed(() => {
+    if (!props.date) return 'No date available'
+    return format(new Date(props.date), 'dd-MM-yyyy')
   })
 </script>
 <!--<script>
