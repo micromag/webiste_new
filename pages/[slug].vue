@@ -37,10 +37,10 @@
          <!--{{ story }}-->
             
           <h1>
-            <span class="block text-base text-center text-teal-500 font-semibold tracking-wide uppercase" style ="color:#0E7452">
+            <span class="block text-base text-center text-blue-900 font-semibold tracking-wide uppercase">
               {{ story.content.author.content.Name }}
             </span>
-            <span class="mt-2 block text-4xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="mt-2 block text-4xl text-center leading-8 font-extrabold tracking-tight text-blue-950 sm:text-4xl">
               {{ story.content.title }}
             </span>
           </h1>
@@ -52,7 +52,7 @@
             height="873"
           />
         </div>
-        <div class="mt-6 prose prose-teal prose-lg text-gray-500 mx-auto">
+        <div class="mt-6 prose prose-blue prose-lg text-gray-500 mx-auto">
           <RichTextRenderer :document="story.content.content"></RichTextRenderer>
           <!--<Suspense>
             <template #default>

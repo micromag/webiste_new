@@ -8,7 +8,14 @@ export default {
     './plugins/**/*.{js,ts}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blue: {
+          100: '#dbeafe',
+          950: '#172554',
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
