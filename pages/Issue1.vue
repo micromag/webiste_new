@@ -16,42 +16,42 @@
             <h1 class="mt-2 text-3xl font-bold tracking-tight text-blue-400 sm:text-4xl"> 
               Issue 1 - micro:bits in Libraries 
             </h1>
-          <!-- Issue date (Month Year) -->
-          <p class="text-base font-semibold leading-7 text-white"> 
-            July 2018 
-          </p>
-          <div class="max-w-xl">
-            <!-- Cover feature title -->
-            <p class="mt-6 text-blue-400 font-bold"> 
-              micro:bit in Libraries 
+            <!-- Issue date (Month Year) -->
+            <p class="text-base font-semibold leading-7 text-white"> 
+              July 2018 
             </p>
-            <!-- Overview of the cover feature -->
-            <p class="mt-6 text-white">
-              In this issues cover article, Michael Rimicans is giving us some insight into the micro:bit in libraries scheme. 
-              You can now loan out micro:bits in hundreds of UK libraries, giving more people the chance to get hands on with 
-              computer science.
-            </p>
+            <div class="max-w-xl">
+              <!-- Cover feature title -->
+              <p class="mt-6 text-blue-400 font-bold"> 
+                micro:bit in Libraries 
+              </p>
+              <!-- Overview of the cover feature -->
+              <p class="mt-6 text-white">
+                In this issues cover article, Michael Rimicans is giving us some insight into the micro:bit in libraries scheme. 
+                You can now loan out micro:bits in hundreds of UK libraries, giving more people the chance to get hands on with 
+                computer science.
+              </p>
             
-            <p class="mt-8 text-blue-400 font-bold">
-              Plus!
-            </p>
-            <!-- Other articles -->
-            <ul class="mt-6 text-white">
-              <li> Skulls or Snakes? </li>
-              <li> Minecraft Pi and micro:bit </li>
-              <li> Reviews </li>
-              <li> Get to know the Micro:bit Educational Foundation </li>
-              <li> And more! </li>
-            </ul>
-          </div>
-          <div class="mt-10 flex">
-            <!--Link to PDF -->   
-            <a href="https://drive.google.com/file/d/1u_A2zWtt4FQTuaJyLTX1ThbXQ8X3_1KO/view?usp=sharing" target="_Blank" class="rounded-md bg-blue-400 px-3 py-1.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"> 
-              Download PDF 
-            </a>
+              <p class="mt-8 text-blue-400 font-bold">
+                Plus!
+              </p>
+              <!-- Other articles -->
+              <ul class="mt-6 text-white">
+                <li> Skulls or Snakes? </li>
+                <li> Minecraft Pi and micro:bit </li>
+                <li> Reviews </li>
+                <li> Get to know the Micro:bit Educational Foundation </li>
+                <li> And more! </li>
+              </ul>
+            </div>
+            <div class="mt-10 flex">
+              <!--Link to PDF -->   
+              <a href="https://drive.google.com/file/d/1u_A2zWtt4FQTuaJyLTX1ThbXQ8X3_1KO/view?usp=sharing" target="_Blank" class="rounded-md bg-blue-400 px-3 py-1.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"> 
+                Download PDF 
+              </a>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     <Footer />
