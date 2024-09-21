@@ -5,15 +5,13 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
-  
-    [
-      '@storyblok/nuxt',
-      {
-        accessToken: process.env.STORYBLOK_KEY,
-        //cacheProvider: 'memory',
-      },
-    ],
-  ]
+    '@storyblok/nuxt',
+  ],
+  storyblok: {
+    accessToken: process.env.STORYBLOK_KEY,
+    //cacheProvider: 'memory',
+  },
+
 })
 
 

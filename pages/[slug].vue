@@ -34,7 +34,7 @@
       <div class="relative px-4 sm:px-6 lg:px-8">
         <!--<StoryblokComponent v-if="story" :blok="story.content" />-->
         <div class="text-lg max-w-prose mx-auto" v-if="story">
-          <!--{{ slug }}-->
+         <!--{{ story }}-->
             
           <h1>
             <span class="block text-base text-center text-teal-500 font-semibold tracking-wide uppercase" style ="color:#0E7452">
@@ -47,12 +47,13 @@
           <img
             class="w-full rounded-lg mt-12"
             :src="story.content.image.filename"
-            alt=""
+            :alt="story.content.image.alt"
             width="1310"
             height="873"
           />
         </div>
         <div class="mt-6 prose prose-teal prose-lg text-gray-500 mx-auto">
+          <RichTextRenderer :document="story.content.content"></RichTextRenderer>
           <!--<Suspense>
             <template #default>
               <RichText :content="story?.content?.richTextField" />
@@ -123,9 +124,10 @@
 </template>
 
 <script setup lang="ts">
-  const route = useRoute()
+  import { RichTextRenderer } from '@marvr/storyblok-rich-text-vue-renderer';
+  const route = useRoute();
 
-  const { slug } = route.params
+  const { slug } = route.params;
 
   const { fetchArticleBySlug } = useArticles()
   

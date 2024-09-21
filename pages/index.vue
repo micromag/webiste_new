@@ -31,8 +31,10 @@
             </h1>
           </div>
         
-          <!--<div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
-            <ArticleCard
+          <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+            <!-- <StoryblokComponent v-if="story" :blok="story.content" /> -->
+            <!--<pre class="text-white"> {{ articles }} </pre>-->
+           <ArticleCard
               v-for="article in articles"
               :key="article.content.title"
               :type="article.content.type"
@@ -43,7 +45,7 @@
               :image="article.content.image.filename"
               
             />
-          </div>-->
+          </div>
         </div>
       </div>
     </div>
@@ -51,8 +53,18 @@
   </div>
 </template>
 
-<script setup>
-import { useArticles } from '~/composables/useArticles';
+<script setup lang="ts">
+  defineProps({
+    blok: {
+      type: Object,
+      default: () => ({}), 
+    },
+  })
+
+  const { articles, fetchArticles } = useArticles()
+
+  await fetchArticles()
+/*import { useArticles } from '~/composables/useArticles';
 
   defineProps({
     blok: {
