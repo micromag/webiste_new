@@ -9,8 +9,7 @@
                 name="articleSubmissions" 
                 method="POST" 
                 data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                @submit.prevent="handleSubmit">
+                data-netlify-honeypot="bot-field">
                 
                 <input type="hidden" name="form-name" value="articleSubmissions" />
                 <!--<p hidden>-->
@@ -202,22 +201,3 @@
         <Footer />
     </div>
 </template>
-
-<script setup>
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        const form = e.target
-
-        const formData = new FormData(form)
-
-        try {
-            await fetch ('/', {
-                method: 'POST',
-                body: formData,
-            })
-            alert('Form Submitted Successfully')
-        } catch (error) {
-            alert ('Form submission failed. Please Try again.')
-        }
-    }
-</script>
