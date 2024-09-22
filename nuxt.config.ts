@@ -12,6 +12,15 @@ export default defineNuxtConfig({
     //cacheProvider: 'memory',
   },
 
+  nitro: {
+    prerender: {
+      routes: [
+        '/Submissions',
+        '/ContactUs'
+      ]
+    }
+  },
+
 })
 
 
