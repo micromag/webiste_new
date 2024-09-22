@@ -76,7 +76,7 @@
                 </a> -->
 
                 <a
-                href="mailto:info@raspikidd.com"
+                href="mailto:micromagteam@gmail.com"
                 target="_blank"
                 class="text-gray-400 hover:text-gray-500"
                 >
