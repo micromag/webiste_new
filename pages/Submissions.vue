@@ -6,13 +6,15 @@
                 Submissions Form
             </h1>
             <form 
-                name="articles" 
+                name="articleSubmissions" 
                 method="POST" 
                 data-netlify="true"
-                data-netlify-honeypot="bot-field">
+                data-netlify-honeypot="bot-field"
+                @submit.prevent="handleSubmit">
                 
-                <input type="hidden" name="form-name" value="articles" />
-                <p hidden>
+                <input type="hidden" name="form-name" value="articleSubmissions" />
+                <!--<p hidden>-->
+                <p style="display: none;">
 		            <label>Don’t fill this out: <input name="bot-field" /></label>
 	            </p>
                 
@@ -116,7 +118,7 @@
                                 </label>
                                 <select id="article-type" name="article-type" class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-blue-500 sm:text-sm sm:leading-6">
                                     <option>News</option>
-                                    <option selected="">Make</option>
+                                    <option selected>Make</option>
                                     <option>Review</option>
                                 </select>
                             </div>
@@ -200,3 +202,22 @@
         <Footer />
     </div>
 </template>
+
+<script setup>
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const form = e.target
+
+        const formData = new FormData(form)
+
+        try {
+            await fetch ('/', {
+                method: 'POST',
+                body: formData,
+            })
+            alert('Form Submitted Successfully')
+        } catch (error) {
+            alert ('Form submission failed. Please Try again.')
+        }
+    }
+</script>
