@@ -21,6 +21,12 @@ export default defineNuxtConfig({
     }
   },
 
+  app: {
+    head: {
+      script: [{src:"https://cdn-cookieyes.com/client_data/bdea172743202246b46b4050/script.js"}],
+    },
+  },
+
 })
 
 
