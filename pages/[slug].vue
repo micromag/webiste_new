@@ -54,70 +54,12 @@
         </div>
         <div class="mt-6 prose prose-blue prose-lg text-gray-500 mx-auto">
           <RichTextRenderer :document="story.content.content"></RichTextRenderer>
-          <!--<Suspense>
-            <template #default>
-              <RichText :content="story?.content?.richTextField" />
-            </template>
-            <template #fallback>
-              <p>Loading content...</p>
-            </template>
-          </Suspense>
-         <div v-html="$md.render(story.content.content)"></div> 
-           {{ story.content.content }}-->
         </div>
       </div> 
     </div>
     <!-- Neswletter form -->
-    <!--<div class="bg-white" style="background-color:#A1C4B5">
-      <div class="px-6 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
-        <div class="px-6 py-6 bg-teal-600 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
-          <div class="xl:w-0 xl:flex-1">
-            <h2 class="text-2xl font-bold tracking-tight sm:text-3xl" style ="color:#0E7452">
-              Sign up to get updates straight to your inbox
-            </h2>
-        
-            <p class="max-w-3xl mt-3 text-lg leading-6 font-bold" style="color:#A42530; text-size: 20px;">
-              Enter your email to be the first to know about the latest news
-            </p>
-          </div>-->
-      
-          <!--<div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
-
-            
-            <form class="md:flex" name="Newsletter" netlify>
-              <label for="name" class="sr-only">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autocomplete="text"
-                required
-                class="w-full px-5 py-3 mr-3 placeholder-gray-500 border-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white"
-                placeholder="Enter your name"
-              />
-              <label for="emailAddress" class="sr-only">Email address</label>
-              <input
-                id="emailAddress"
-                name="emailAddress"
-                type="email"
-                autocomplete="email"
-                required
-                class="w-full px-5 py-3 placeholder-gray-500 border-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white"
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                class="flex items-center justify-center w-full px-5 py-3 mt-3 text-base font-medium text-black border border-transparent rounded-md shadow hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
-                style ="background-color:#76B82A; color:#0E7452; font-weight: bold; font-size: 22px"
-              >
-                Sign up
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
+    <NewsletterForm />
+    
     <!-- Footer -->
     <Footer />
   </div>
@@ -132,36 +74,4 @@
   const { fetchArticleBySlug } = useArticles()
   
   const story = await fetchArticleBySlug(slug as string)
-  // Get the slug from the route
-  /* const {slug} = useRoute().params
-
-  const story = await useAsyncStoryblok(
-    slug && slug.length > 0 ? slug.join('/') : 'home', 
-    {version:'published'} 
-  ) */
-
 </script>
-
-<!--<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  async asyncData({ app, route }) {
-    // Get the slug from the route
-    const slug = route.params.slug
-
-    const res = await app.$storyapi.get('cdn/stories', {
-      starts_with: 'articles/',
-      by_slugs: '*/' + slug,
-      resolve_relations: 'author',
-    })
-
-    const article = res.data.stories[0]
-    article.content.date = new Date(article.content.date)
-
-    if (!article) return Error(`Article with slug ${slug} not found`)
-
-    return { article, author: article.content.author }
-  },
-})
-</script>-->

@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/Submissions',
-        '/ContactUs'
+        '/ContactUs',
+        '/Newsletter'
       ]
     }
   },
