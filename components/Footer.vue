@@ -103,7 +103,7 @@
           &copy; 2024 RaspiKidd. All rights reserved. 
           <a 
           class ="text-blue-500" 
-          href= "/privacy_policy.pdf"
+          href= "https://www.iubenda.com/privacy-policy/88395322"
           target="_blank"> 
             Privacy Policy 
           </a>
@@ -116,5 +116,5 @@
     
     export default {
       name: "Footer",
-    }
+    };
 </script>
