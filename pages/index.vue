@@ -17,7 +17,7 @@
 
       <!-- Tag Line -->
       <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+        <h1 class="text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl">
           Micro:Bit, EdTech & Technology news
         </h1>
       </div>
@@ -50,6 +50,7 @@
         </div>
       </div>
     </div>
+    <NewsletterForm />
     <Footer />
   </div>
 </template>

@@ -1,19 +1,19 @@
 <template>
   <nuxt-link :to="slug">
-    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-blue-300">
       <div class="flex-shrink-0">
         <img class="h-48 w-full object-cover" :src="image" alt="" />
       </div>
-      <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+      <div class="flex-1 p-6 flex flex-col justify-between bg-blue-200">
         <div class="flex-1">
           <p class="text-md font-medium text-blue-900">
             {{ type }}
           </p>
           <a href="#" class="block mt-2">
-            <p class="text-xl font-semibold text-gray-900">
+            <p class="text-xl font-semibold text-blue-950">
               {{ title }}
             </p>
-            <p class="mt-3 text-base text-gray-500">
+            <p class="mt-3 text-base text-gray-900">
               {{ description }}
             </p>
           </a>

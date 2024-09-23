@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@storyblok/nuxt',
+    '@nuxtjs/sitemap',
   ],
   storyblok: {
     accessToken: process.env.STORYBLOK_KEY,
@@ -27,7 +28,29 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: ['~/plugins/google-analytics.client.ts']
+  plugins: ['~/plugins/google-analytics.client.ts'],
+
+  sitemap: {
+    hostname: 'https://micromag.raspikidd.com', // Replace with your Netlify domain or custom domain
+    gzip: true, // Optional: enable gzip compression for the sitemap
+    routes: [
+      '/',
+      '/Magazines',
+      '/Contribute',
+      '/ContactUs',
+      '/Guidelines',
+      '/Submissions',
+      '/Issue1',
+      '/Issue2',
+      '/Issue3',
+      '/Issue4',
+      '/Issue5',
+      '/Issue6',
+      '/Issue7',
+      '/Issue8',
+    ]
+  }
+
 })
 
 
