@@ -36,9 +36,7 @@
               </a>
             </p>
             <div class="flex space-x-1 text-sm text-blue-900">
-              <!--<time datetime="2020-03-16">-->
                 {{ formattedDate }}
-              <!--</time>-->
             </div>
           </div>
         </div>
@@ -66,16 +64,3 @@
     return format(new Date(props.date), 'dd-MM-yyyy')
   })
 </script>
-<!--<script>
-export default {
-  props: {
-    type: String,
-    title: String,
-    slug: String,
-    description: String,
-    author: Object,
-    date: String,
-    image: String,
-  },
-}
-</script>-->

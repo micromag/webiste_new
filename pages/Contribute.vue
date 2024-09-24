@@ -143,9 +143,6 @@
                         <NuxtLink to="/Submissions" class="rounded-md bg-blue-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
                             Submit an Article
                         </NuxtLink>
-                        <!--<a href="https://forms.gle/Sf3YYazedDEtNnqr8" target="_Blank" class="rounded-md bg-blue-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
-                            Submit an Article
-                        </a>-->
                     </div>
                     <p class="text-2xl mt-8">
                         <strong class="font-semibold text-blue-400">Questions?</strong>

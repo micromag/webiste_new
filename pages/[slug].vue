@@ -32,10 +32,7 @@
         </div>
       </div>
       <div class="relative px-4 sm:px-6 lg:px-8">
-        <!--<StoryblokComponent v-if="story" :blok="story.content" />-->
         <div class="text-lg max-w-prose mx-auto" v-if="story">
-         <!--{{ story }}-->
-            
           <h1>
             <span class="block text-base text-center text-blue-900 font-semibold tracking-wide uppercase">
               {{ story.content.author.content.Name }}

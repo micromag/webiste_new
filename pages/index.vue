@@ -8,11 +8,6 @@
       </div>
 
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <!--<div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <h1 class="relative px-5 py-1 text-3xl font-bold leading-10 text-white">
-            The home for all your micro:bit
-          </h1>
-        </div>-->
       </div>
 
       <!-- Tag Line -->
@@ -32,8 +27,6 @@
           </div>
         
           <div class="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
-            <!-- <StoryblokComponent v-if="story" :blok="story.content" /> -->
-            <!--<pre class="text-white"> {{ articles }} </pre>-->
            <ArticleCard
               v-for="article in articles"
               :key="article.content.title"
@@ -66,67 +59,4 @@
   const { articles, fetchArticles } = useArticles()
 
   await fetchArticles()
-/*import { useArticles } from '~/composables/useArticles';
-
-  defineProps({
-    blok: {
-      type: Object,
-      default: () => ({}),
-    },
-  })
-  const {articles, fetchArticles} = useArticles()
-  
-  await fetchArticles()
-  /*const articles = ref(null)
-
-  const storyblokApi = useStoryblokApi()
-
-  const {data} = await storyblokApi.get('/cdn/stories', {
-    version: useRoute().query._storyblok ? 'draft' : 'published',
-    //version: process.env.NODE_ENV == 'production' ? 'published' : 'draft',
-    starts_with: 'articles/',
-    resolve_relations: 'author',
-    is_startpage: false,
-  })
-
-  articles.value = data.stories */
 </script>
-<!--<script lang="ts">
-  /*import Header from "~/components/Header.vue";
-  import Footer from "~/components/Footer.vue";*/
-
-  export default {
-    async asyncData({ app }) {
-            const res = await app.$storyapi.get('cdn/stories', {
-                starts_with: 'articles/',
-                resolve_relations: 'author',
-            })
-
-            // Let's convert content.date from a String to a Date
-            const articles = res.data.stories.map((story: any) => {
-                story.content.date = new Date(story.content.date)
-                return story
-            })
-
-            return { articles } 
-        },
-    /*components: {
-      Header,
-      Footer,
-    }*/
-  };
-</script>-->
-<!--<script setup>
-defineProps({ blok: Object })
- 
-const articles = ref(null)
-const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories', {
-  version: 'publish',
-  starts_with: 'articles/',
-  resolve_relations: 'author',
-  //is_startpage: false,
-})
-
-articles.value = data.stories
-</script>-->
