@@ -43,7 +43,6 @@
         </div>
       </div>
     </div>
-    <NewsletterForm />
     <Footer />
   </div>
 </template>

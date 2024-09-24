@@ -89,7 +89,7 @@
             </li>
           </ul>
         </div>
-  
+        <NewsletterForm />
       <!-- Footer -->
       <Footer />
      
