@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       routes: [
         '/Submissions',
         '/ContactUs',
-        'index',
+        '/index',
       ]
     }
   },
