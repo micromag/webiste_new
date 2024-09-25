@@ -38,7 +38,7 @@
                     </svg>
                 </a>
                 <a
-                href="https://twitter.com/micro_mag"
+                href="https://x.com/micro_mag"
                 target="_blank"
                 class="text-gray-400 hover:text-gray-500"
                 >
