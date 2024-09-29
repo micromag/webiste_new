@@ -19,6 +19,7 @@ export default defineNuxtConfig({
         '/Submissions',
         '/ContactUs',
         '/Magazines',
+        '/SignUp',
       ]
     }
   },
