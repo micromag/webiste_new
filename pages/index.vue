@@ -9,7 +9,7 @@
 
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 text-center">
         <h1 class="text-4xl font-bold tracking-tight text-blue-200 sm:text-6xl">
-          Micro:Bit, EdTech & Technology news
+          micro:bit, EdTech & Technology News
         </h1>
       </div>
 
