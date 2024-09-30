@@ -28,6 +28,9 @@
           <NuxtLink to ="/ContactUs" class="text-md font-semibold leading-6 text-white hover:text-blue-500">
             Contact Us
           </NuxtLink>
+          <NuxtLink to ="/SignUp" class="text-md font-semibold leading-6 text-white hover:text-blue-500">
+            Newsletter Signup
+          </NuxtLink>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <!--<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>-->
@@ -71,6 +74,9 @@
                           </NuxtLink>
                           <NuxtLink to="/ContactUs" class="text-base font-medium text-gray-500 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 p-3">
                             Contact Us
+                          </NuxtLink>
+                          <NuxtLink to="/SignUp" class="text-base font-medium text-gray-500 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 p-3">
+                            Newsletter SignUp
                           </NuxtLink>
                         </nav>
                       </div>
